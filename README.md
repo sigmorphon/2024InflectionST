@@ -12,9 +12,9 @@ By doing that, we will target the following research questions:
 
 
 The experiments will be conducted for the following languages:
-   --  Mongolian
-   --  Kazakh
-   --  Turkish
+  --  Mongolian
+  --  Kazakh
+  --  Turkish
    --  Central Kurdish
    --  Hebrew
    --  Russian
