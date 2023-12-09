@@ -11,15 +11,7 @@ By doing that, we will target the following research questions:
   4)  How well do the systems learn syncretic forms?
 
 
-The experiments will be conducted for the following languages:
-  --  Mongolian
-  --  Kazakh
-  --  Turkish
-   --  Central Kurdish
-   --  Hebrew
-   --  Russian
-   --  Sanskrit
-   --  Pitjantjatjara
+The experiments will be conducted for the following languages: Mongolian, Kazakh, Turkish, Central Kurdish, Hebrew, Russian, Sanskrit, Pitjantjatjara
 
 
 
