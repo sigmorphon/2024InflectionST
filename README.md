@@ -7,11 +7,11 @@ For each language we will focus on one class only (nouns, verbs, or adjectives).
 By doing that, we will target the following research questions:
   1) What is the minimum number of samples that is required to achieve a particular accuracy level on each language?
   2)  What is the best strategy to choose samples?
-  3)  Are the most essential paradigm parts?
+  3)  What are the most essential paradigm parts (principal parts of the paradigm)? How do we learn them automatically?
   4)  How well do the systems learn syncretic forms?
 
 
-The experiments will be conducted for the following languages: Mongolian, Kazakh, Turkish, Central Kurdish, Hebrew, Russian, Sanskrit, Pitjantjatjara
+The experiments will be conducted for the following languages: Mongolian, Kazakh, Turkish, Central Kurdish, Arabic, Polish, Sanskrit, Pitjantjatjara
 
 
 
