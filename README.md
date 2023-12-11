@@ -6,7 +6,7 @@ For each language we will focus on one class only (nouns, verbs, or adjectives).
 
 By doing that, we will target the following research questions:
 
-I. What is the minimum number of samples that is required to achieve a particular accuracy level in each language? Does it correlate with morphological complexity? Further reading on the topic:  1) Ackerman and Malouf https://muse.jhu.edu/article/521667/summary; 2) Cotterell, Kirov, Hulden, Eisner https://aclanthology.org/Q19-1021.pdf; 3) Çöltekin and Rama https://www.degruyter.com/document/doi/10.1515/lingvan-2021-0007/html?lang=en
+I. What is the minimum number of samples that is required to achieve a particular accuracy level in each language? Does it correlate with morphological complexity? Further reading on the topic:  1) [Morphological Organization: The Low Conditional Entropy Conjecture](https://muse.jhu.edu/article/521667/summary); 2) Cotterell, Kirov, Hulden, Eisner https://aclanthology.org/Q19-1021.pdf; 3) Çöltekin and Rama https://www.degruyter.com/document/doi/10.1515/lingvan-2021-0007/html?lang=en
 
 II. What is the best strategy to sample selection? Further reading: 1) Muradoglu and Hulden https://aclanthology.org/2022.emnlp-main.492.pdf; 2) Goldman and Tsarfaty https://aclanthology.org/2021.emnlp-main.159.pdf
 
