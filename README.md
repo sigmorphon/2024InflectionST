@@ -14,8 +14,8 @@ III. What are the most essential paradigm parts (principal parts of the paradigm
 
 IV. How well do the systems learn syncretic forms? Further reading: Muradoglu, Evans, Vylomova: https://aclanthology.org/2020.alta-1.5.pdf
 
-
-The experiments will be conducted for the following languages: Mongolian, Kazakh, Turkish, Central Kurdish, Arabic, Polish, Sanskrit, Pitjantjatjara
+# Languages
+The experiments will be conducted for the following languages: Mongolian, Kazakh, Turkish, Central Kurdish, Arabic, Polish, Sanskrit, Pitjantjatjara, Central Pame, Walmajarri
 
 
 
