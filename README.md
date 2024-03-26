@@ -5,6 +5,7 @@ For each system we collect all forms that were retrieved via oracle. The task is
 
 # Languages and Paradigms
 Development languages: English verbs, Latin verbs, Turkish verbs, Kurdish verbs, Russian nouns, Murrinhpatha verbs 
+
 Surprise languages: To be announced in May
 
 # Oracle API
