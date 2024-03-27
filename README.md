@@ -14,13 +14,13 @@ Development languages: English verbs, Latin verbs, Turkish verbs, Kurdish verbs,
 
 Statistics of the available languages:
 
-| Language | #Lemmas | #Forms | Avg. Paradigm size | #Tag Sets | #Classes |
-|----------|---------|--------|--------------------|-----------|-------------|
-| English  | 23741   | 94964  | 4                  | 4         | 12          |
-| Latin    | 947     | 22939  | 24.2               | 54        | 9           |
-| Kurdish  | 1022    | 63678  | 62.3               | 70        | 46          |
-| Turkish  | 386     | 271358 | 703                | 703       | 46          |
-| Russian  | 12705   | 146288 | 11.5               | 16        | 306         |
+| Language | #Lemmas |  Avg. Paradigm size | #Tag Sets | #Classes |
+|----------|---------|--------------------|-----------|-------------|
+| English  | 23741   |  4                  | 4         | 12          |
+| Latin    | 947     |  24.2               | 54        | 9           |
+| Kurdish  | 1022    |  62.3               | 70        | 46          |
+| Turkish  | 386     |  703                | 703       | 46          |
+| Russian  | 12705   |  11.5               | 16        | 306         |
 
 Surprise languages: To be announced in May
 
