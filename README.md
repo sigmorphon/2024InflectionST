@@ -10,7 +10,17 @@ For the latter, you may imagine a situation where a linguist publishes a book an
 For each system we collect all forms that were retrieved via oracle. The task is to maximise the accuracy and minimise the number of requests to a speaker (oracle). The systems will also be evaluated in terms of their accuracy across paradigm classes. 
 
 # Languages and Paradigms
-Development languages: English verbs, Latin verbs, Turkish verbs, Kurdish verbs, Russian nouns, Murrinhpatha verbs 
+Development languages: English verbs, Latin verbs, Turkish verbs, Kurdish verbs, Russian nouns
+
+Statistics of the available languages:
+
+| Language | #Lemmas | #Forms | Avg. Paradigm size | #Tag Sets | #Classes |
+|----------|---------|--------|--------------------|-----------|-------------|
+| English  | 23741   | 94964  | 4                  | 4         | 12          |
+| Latin    | 947     | 22939  | 24.2               | 54        | 9           |
+| Kurdish  | 1022    | 63678  | 62.3               | 70        | 46          |
+| Turkish  | 386     | 271358 | 703                | 703       | 46          |
+| Russian  | 12705   | 146288 | 11.5               | 16        | 306         |
 
 Surprise languages: To be announced in May
 
