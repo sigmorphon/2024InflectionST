@@ -1,12 +1,12 @@
 # Data-efficient Morphological Inflection and Simulation of Linguistic Fieldwork
 
 This year we will focus on data efficiency and active learning. The task is a simulation of linguistic fieldwork where a linguist comes with a pre-existing dictionary (~lemmas are known) and a morphological paradigm structure for the corresponding part of speech (i.e. we assume that feature combinations are known but classes and forms are not). An oracle system will be serving as a native speaker, i.e. it provides access to complete paradigms for all lemmas: as an input it receives (1) a lemma, (2) target tags/features, (3) system id (~linguist). The oracle system has access to all forms, but it comes as a certain cost. Participants can send requests to retrieve a form or to check whether their prediction is correct (if it's incorrect, the oracle system returns a correct form). We introduce a variety of penalties depending on the use case scenario:
-1. form retrieval without prediction (e.g.., in a cold start condition);
-2. form check and the form is predicted correctly (e.g., lowest penalty; a speaker is satisfied);
-3. form check, the predicted form is wrong and a correct form is provided (a native speaker is dissatisfied and fixes it);
-4. the forms that were neither retrieved nor checked by the speaker but predicted incorrectly (the highest).
+1. -1: retrieve a form without prediction (e.g.., in a cold start condition);
+2. 0:  check a form, and the form is predicted *correctly* (no penalty; a speaker is satisfied);
+3. -1: check a form, and the predicted form is *incorrect* and a correct form is retrieved (a native speaker is dissatisfied and fixes it);
+4. -1: the forms that were neither retrieved nor checked but predicted *incorrectly*.
 
-For the latter, you may imagine a situation where a linguist publishes a book and makes an error there (hence the highest penalty).
+In other words, each form retrieval comes at -1 penalty score (as mentioned, the check action involves form retrieval if the form is mispredicted).
 For each system we collect all forms that were retrieved via oracle. The task is to maximise the accuracy and minimise the number of requests to a speaker (oracle). The systems will also be evaluated in terms of their accuracy across paradigm classes. 
 
 # Languages and Paradigms
@@ -14,13 +14,13 @@ Development languages: English verbs, Latin verbs, Turkish verbs, Kurdish verbs,
 
 Statistics of the available languages:
 
-| Language | #Lemmas |  Avg. Paradigm size | #Tag Sets | #Classes |
-|----------|---------|--------------------|-----------|-------------|
-| English  | 23741   |  4                  | 4         | 12          |
-| Latin    | 947     |  24.2               | 54        | 9           |
-| Kurdish  | 1022    |  62.3               | 70        | 46          |
-| Turkish  | 386     |  703                | 703       | 46          |
-| Russian  | 12705   |  11.5               | 16        | 306         |
+| Language | #Lemmas |  Avg. Paradigm size | #Tag Sets |
+|----------|---------|--------------------|-----------|
+| English  | 23741   |  4                  | 4         | 
+| Latin    | 947     |  24.2               | 54        | 
+| Kurdish  | 1022    |  62.3               | 70        | 
+| Turkish  | 386     |  703                | 703       | 
+| Russian  | 12705   |  11.5               | 16        | 
 
 Surprise languages: To be announced in May
 
