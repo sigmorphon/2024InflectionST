@@ -61,6 +61,10 @@ The response format, like `GetForms`, is a tab-separated string of lemma, form, 
 go	went	V;PST
 see	saw	V;PST
 ```
+## oracle/GetStat (GET)
+To check the current penalty score of your system, simply call this API with your system ID and the language code. For instance, this [link](https://test2.kurdinus.com/Oracle/GetStat?sysID=q1&lang=eng) gets the number of the times the system ''q1'' asked for target forms of the English data.
+- **Note**: There is no oracle usage reset function. If you are training a new model, just use a different unique `sysID`.
+
 ## Usage example in Python
 This code reads the provided `eng.tsv` file and gets the correct forms required for training by accessing the oracle API.
 ```python
