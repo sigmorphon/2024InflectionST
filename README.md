@@ -93,6 +93,39 @@ def get_forms(sysID, lang, lemma_tags_set):
 
 To become better acquainted with the API functions, you can explore and navigate the [web OpenAPI interface](https://test2.kurdinus.com/swagger/).
 
+# Baseline
+The baseline settings are:
+- We have used [nueral character-level transformer](https://github.com/shijie-wu/neural-transducer/) described in [Wu and Cotterell, 2019](https://arxiv.org/abs/2005.10213)
+- In the initial iteration, we employed a random selection process to extract 500 samples from the provided data (lemma and tags sets).
+- Subsequently, utilizing the oracle API, we retrieved the forms of the chosen samples and partitioned them into a 90% training set and a 10% development set.
+- Our model training started, and after 2,000 epochs, we stopped the training phase. The model then predicted the target form for the remaining pool data.
+- In subsequent iterations, we refined our approach by first sorting the pool data based on the confidence level (negative log likelihood loss) of predictions. We then selected the 100 least confident predictions to request the correct forms from the oracle. Given the likelihood of incorrect predictions, acquiring these correct forms significantly enhances the quality of our training data. Additionally, we chose the 300 most confident predictions to cross-check with the oracle, as these are expected to be correct, thus incurring no penalty from the oracle.
+- Following this, we incorporated these 400 new samples into our training data and removed them from the pool. Subsequently, we re-trained the model. These steps were iterated for four additional cycles to further refine our model's performance.
+- Finally, we queried the oracle API for the statistics of our requests. 
+
+The baseline results are:
+| Measure |  eng | lat | rus | tur | ckb |
+|---|---|---|---|---|---|
+| Asked without prediction | 900 | 900 | 900 | 900 | 900 |
+| Asked with wrong prediction | 467 | 6 | 138 | 0 | 114 |
+| Asked with correct prediction | 733 | 1194 | 1062 | 1200 | 1086 |
+| Total forms | 96564 | 24468 | 147887 | 81864 | 58646 |
+| Asked from oracle | 2.2% | 8.6% | 1.4% | 2.6% | 3.6% |
+
+Then, with the full data with target forms and the predictions of the final models, we calculated the accuracy of the models:
+| Measure |  eng | lat | rus | tur | ckb |
+|---|---|---|---|---|---|
+| Count of correct predictions | 83944 | 14918 | 120558 | 74840 | 51899 |
+| Count of wrong predictions | 10520 | 7450 | 25229 | 4924 | 4647 |
+| Penalty | 11,887 | 8,356 | 26,267 | 5,824 | 5,661 |
+| **Normalized Penalty** | 87.7% | 65.8% | 82.2% | 92.9% | 90.3% |
+| Count of predictions | 94464 | 22368 | 145787 | 79764 | 56546 |
+| **Accuracy of predictions** | 88.9% | 66.7% | 82.7% | 93.8% | 91.8% |
+
+We calculate Penalty and Normalized Penalty as follows:
+- $${Penalty = Retrieved Without Prediction + Retrieved With Wrong Prediction + Count Of Wrong Predictions }$$
+- $${Normalized Penalty = \dfrac{Count Of Forms - Penalty}{Count Of Forms}}$$
+
 # Important dates
 - April 1, 2024: Development language data and Baseline systems released to participants
 - May 15, 2024: Surprise language data and the evaluator oracle API are available for participants
