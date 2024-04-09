@@ -20,8 +20,8 @@ Statistics of the available languages:
 |----------|-----|---------|---------------------|-----------|
 | English  | eng | 23741   |  4                  | 4         | 
 | Latin    | lat | 947     |  24.2               | 54        | 
-| Kurdish  | ckb | 1022    |  62.3               | 70        | 
-| Turkish  | tur | 386     |  703                | 703       | 
+| Kurdish  | ckb | 1013    |  56.4               | 63        | 
+| Turkish  | tur | 380     |  211.2              | 295       | 
 | Russian  | rus | 12705   |  11.5               | 16        | 
 
 Surprise languages: To be announced in May
@@ -48,6 +48,8 @@ The response format is a tab-separated string of lemma, form, and tags. For exam
 go	went	V;PST
 see	saw	V;PST
 ```
+- **Note**: To avoid server errors, please post your request in 100 lemma-tags sets bunches.
+
 ## oracle/CheckForms (POST)
 You use this endpoint when you want to check predictions of your model. It's important to note that your predictions, whether wrong or correct, will be counted separately.
 
@@ -95,7 +97,7 @@ To become better acquainted with the API functions, you can explore and navigate
 
 # Baseline
 The baseline settings are:
-- We have used [nueral character-level transformer](https://github.com/shijie-wu/neural-transducer/) described in [Wu and Cotterell, 2019](https://arxiv.org/abs/2005.10213)
+- We have used [neural character-level transformer](https://github.com/shijie-wu/neural-transducer/) described in [Wu and Cotterell, 2019](https://arxiv.org/abs/2005.10213)
 - In the initial iteration, we employed a random selection process to extract 500 samples from the provided data (lemma and tags sets).
 - Subsequently, utilizing the oracle API, we retrieved the forms of the chosen samples and partitioned them into a 90% training set and a 10% development set.
 - Our model training started, and after 2,000 epochs, we stopped the training phase. The model then predicted the target form for the remaining pool data.
