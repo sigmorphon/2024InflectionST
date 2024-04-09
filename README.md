@@ -125,8 +125,8 @@ Then, with the full data with target forms and the predictions of the final mode
 | **Accuracy of predictions** | 88.9% | 66.7% | 82.7% | 93.8% | 91.8% |
 
 We calculate Penalty and Normalized Penalty as follows:
-- $${Penalty = Retrieved Without Prediction + Retrieved With Wrong Prediction + Count Of Wrong Predictions }$$
-- $${Normalized Penalty = \dfrac{Count Of Forms - Penalty}{Count Of Forms}}$$
+- Penalty = #retrieved_no_prediction + #retrieved_wrong_prediction + #wrong_prediction
+- Normalised Penalty = (#total_forms - penalty)/#total_forms
 
 # Important dates
 - April 1, 2024: Development language data and Baseline systems released to participants
