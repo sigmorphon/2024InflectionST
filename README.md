@@ -109,20 +109,20 @@ The baseline results are:
 | Measure |  eng | lat | rus | tur | ckb |
 |---|---|---|---|---|---|
 | Asked without prediction | 900 | 900 | 900 | 900 | 900 |
-| Asked with wrong prediction | 467 | 6 | 138 | 0 | 114 |
-| Asked with correct prediction | 733 | 1194 | 1062 | 1200 | 1086 |
-| Total forms | 96564 | 24468 | 147887 | 81864 | 58646 |
-| Asked from oracle | 2.2% | 8.6% | 1.4% | 2.6% | 3.6% |
+| Asked with wrong prediction | 874 | 118 | 86 | 149 | 79 |
+| Asked with correct prediction | 326 | 1082 | 1114 | 1051 | 1121 |
+| Total forms | 94964 | 20742 | 146287 | 80264 | 57103 |
+| Asked from oracle | 2.2% | 10.1% | 1.4% | 2.6% | 3.7% |
 
 Then, with the full data with target forms and the predictions of the final models, we calculated the accuracy of the models:
 | Measure |  eng | lat | rus | tur | ckb |
 |---|---|---|---|---|---|
-| Count of correct predictions | 83944 | 14918 | 120558 | 74840 | 51899 |
-| Count of wrong predictions | 10520 | 7450 | 25229 | 4924 | 4647 |
-| Penalty | 11,887 | 8,356 | 26,267 | 5,824 | 5,661 |
-| **Normalized Penalty** | 87.7% | 65.8% | 82.2% | 92.9% | 90.3% |
-| Count of predictions | 94464 | 22368 | 145787 | 79764 | 56546 |
-| **Accuracy of predictions** | 88.9% | 66.7% | 82.7% | 93.8% | 91.8% |
+| Count of correct predictions | 84309 | 16645 | 121858 | 75952 | 49510 |
+| Count of wrong predictions | 8555 | 1997 | 22329 | 2215 | 5493 |
+| Penalty | 10,329 | 3,015 | 23,315 | 3,264 | 6,472 |
+| **Normalized Penalty** | 89.1% | 85.5% | 84.1% | 95.9% | 88.7% |
+| Count of predictions | 92864 | 18642 | 144187 | 78167 | 55003 |
+| **Accuracy of predictions** | 90.8% | 89.3% | 84.5% | 97.2% | 90.0% |
 
 We calculate Penalty and Normalized Penalty as follows:
 - Penalty = #retrieved_no_prediction + #retrieved_wrong_prediction + #wrong_prediction
