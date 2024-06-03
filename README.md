@@ -130,10 +130,10 @@ We calculate Penalty and Normalized Penalty as follows:
 
 # Important dates
 - April 1, 2024: Development language data and Baseline systems released to participants
-- May 15, 2024: Surprise language data and the evaluator oracle API are available for participants
-- May 31, 2024: Final Submissions are due
-- June 3, 2024: Results announced to participants
-- June 22, 2024: System papers due for review
+- (~~May 15~~) June 5, 2024: Surprise language data and the evaluator oracle API are available for participants
+- (~~May 31~~) June 14, 2024: Final Submissions are due
+- (~~June 3~~) Jun 17, 2024: Results announced to participants
+- (~~June 22~~) Jul 6, 2024: System papers due for review
 - July 31, 2024: Reviews back to participants
 - August 15, 2024: CR deadline; task paper due from organizers.
 
