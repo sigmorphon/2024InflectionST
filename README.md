@@ -162,6 +162,7 @@ By doing that, we will target the following research questions:
 # Task organizers
 - Aso Mahmudi, School of Computing and Information Systems, University of Melbourne
 - Demian Inostroza Améstica
+- John Mansfield, School of Languages and Linguistics, University of Melbourne
 - Borja Herce, Department of Comparative Language Science, UZH Zurich
 - Andreas Scherbakov, Constraint Technology International
 - Khuyagbaatar Batsuren, School of Computing and Information Systems, University of Melbourne
