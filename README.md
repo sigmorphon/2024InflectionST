@@ -24,7 +24,13 @@ Statistics of the available languages:
 | Turkish  | tur | 380     |  211.2              | 295       | 
 | Russian  | rus | 12705   |  11.5               | 16        | 
 
-Surprise languages: To be announced in May
+Surprise languages:
+
+| Language | code| #Lemmas |  Paradigm size | #Tag Sets |
+|----------|-----|---------|----------------|-----------|
+| Khalkha (Halh) Mongolian | khk | 2057 | 7  | 7  | 
+| Murrinh-Patha            | mwf | 30   | 37 | 37 | 
+| Central Pame             | pbs | 216  | 58 | 58 | 
 
 # The oracle API
 SIGMORPHON 2024 oracle API answers queries about the correct form of paradigms in available languages.
