@@ -143,6 +143,11 @@ We calculate Penalty and Normalized Penalty as follows:
 - July 31, 2024: Reviews back to participants
 - August 15, 2024: CR deadline; task paper due from organizers.
 
+# Submission Instructions
+After completing the task, you can submit your results for each language as a tab-separated file containing the `lemma`, `tags`, and your system's `prediction` via the **SubmitResults** endpoint of  [the API interface](https://test2.kurdinus.com/swagger/). This endpoint will also provide a detailed analysis of your submission's performance.
+
+Alternatively, you can email your team's results to aso.mehmudi@gmail.com or evylomova@gmail.com, ensuring you CC your teammates.
+
 # Important links
 - Registration Form: [https://forms.gle/M9RPUjZKQCvnfidm7](https://forms.gle/M9RPUjZKQCvnfidm7)
 - Data + detailed description: [https://github.com/sigmorphon/2024InflectionST](https://github.com/sigmorphon/2024InflectionST)
